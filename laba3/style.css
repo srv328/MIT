@@ -1,11 +1,11 @@
 body {
-	background: url(images/background.png); 
+    background: url(images/background.png); 
     background-attachment: fixed;
     background-size: 100%;
 }
 
 ul {
-	color: orangered;
+    color: orangered;
 }
 
 span {
@@ -19,9 +19,9 @@ summary {
 }
 
 details {
-    padding: 10px;
-    margin-bottom: 10px;
-    color: antiquewhite;
+	padding: 10px;
+	margin-bottom: 10px;
+	color: antiquewhite;
 }
 
 h1 {
