@@ -1,0 +1,196 @@
+body {
+	background: url(images/background.png); 
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
+ul {
+	color: orangered;
+}
+
+span {
+    font-family: 'Comic Sans MS';
+    font-style: italic;
+    font-size: 130%;
+}
+
+summary {
+	font-weight: bold;
+}
+
+details {
+    padding: 10px;
+    margin-bottom: 10px;
+    color: antiquewhite;
+}
+
+h1 {
+	text-align: center;
+	color: ghostwhite;
+	font-family: "Comic Sans MS";
+}
+
+table, th, td {
+    border: 1px solid hotpink; /* Устанавливаем стиль границы для таблицы, заголовков и ячеек */
+    color: orangered; 
+}
+
+table {
+	background: url("images/bg_1.jpg");
+	margin: auto;
+	border-collapse: collapse;
+}
+
+.person-info {
+	background: url("images/bg_1.jpg");
+    font-size: 1.5em;
+    text-align: center;
+    margin: 0 auto;
+    width: 70%;
+}
+
+.person-info p {
+    font-size: 20px;
+    font-family: 'Comic Sans MS';
+}
+
+.center {
+	font-size: 1.5em;
+	text-indent: 1.5em;
+	text-align: center;
+}
+
+.person-name {
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    font-family: "Comic Sans MS";
+}
+
+.company-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.text {
+	background: url("images/bg_1.jpg");
+	width: 60%;
+	float: left;
+	font-size: 20px;
+	font-family: 'Comic Sans MS';
+	color: orange;
+}
+
+.image {
+	float: right;
+}
+
+.top-panel {
+    display: flex;
+    align-items: center;
+}
+
+.search-box {
+    background: skyblue;
+    display: flex;
+    padding: 5px;
+    width: 65%;
+    height: 35px;
+    margin-right: 10px;
+}
+
+.search-box input {
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 5px;
+}
+
+.search-box button {
+    color: white;
+    padding: 5px 10px;
+}
+
+.content {
+    width: 99%;
+    padding: 1em;
+    overflow: hidden;
+    text-align: center;
+    float: right;
+}
+
+.image-block {
+    width: 82.5%;
+    overflow: hidden;
+    margin: auto;
+    text-align: center;
+}
+
+.logo {
+    display: flex; /* Используем flexbox */
+    margin: auto;
+    justify-content: center; /* Выравнивание содержимого по центру по горизонтали */
+    align-items: center; /* Выравнивание содержимого по центру по вертикали */
+    width: 80%;
+    text-align: center;
+    overflow: hidden;
+}
+
+.round {
+    display: inline-block;
+    border-radius: 50%;
+    border: 0.28em dotted rgb(20, 180, 20);
+    text-align: center;
+    padding: 1%;
+    margin-top: 5px;
+    white-space: nowrap;
+}
+
+.image-text {
+    text-align: center;
+    margin: 10px; /* Расстояние между контейнерами */
+}
+
+.image-text p {
+	color: white;
+    font-size: 24px; /* Размер текста */
+    margin-top: 5px; /* Расстояние между картинкой и текстом */
+    font-family: 'Comic Sans MS';
+}
+
+.combo {
+	width: 20%;
+}
+
+.right {
+	float: right;
+}
+
+.left {
+	float: left;
+}
+
+.footer {
+    background-color: #333; /* Цвет фона футера */
+    color: #fff; /* Цвет текста */
+    padding: 20px; /* Внутренний отступ футера */
+    width: 98%; /* Ширина футера равна ширине страницы */
+}
+
+.pink-link {
+	color:pink;
+}
+
+.blue-link {
+    color: blue;
+}
+
+.red-link {
+    color: red;
+}
+
+.white-link {
+    color: white;
+}
