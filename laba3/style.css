@@ -31,7 +31,7 @@ h1 {
 }
 
 table, th, td {
-    border: 1px solid hotpink; /* Устанавливаем стиль границы для таблицы, заголовков и ячеек */
+    border: 1px solid hotpink; 
     color: orangered; 
 }
 
@@ -129,11 +129,10 @@ table {
 }
 
 .logo {
-    display: flex; /* Используем flexbox */
+    display: flex; 
     margin: auto;
-    justify-content: center; /* Выравнивание содержимого по центру по горизонтали */
-    align-items: center; /* Выравнивание содержимого по центру по вертикали */
-    width: 80%;
+    justify-content: center; 
+    align-items: center; 
     text-align: center;
     overflow: hidden;
 }
@@ -150,13 +149,13 @@ table {
 
 .image-text {
     text-align: center;
-    margin: 10px; /* Расстояние между контейнерами */
+    margin: 10px;
 }
 
 .image-text p {
 	color: white;
-    font-size: 24px; /* Размер текста */
-    margin-top: 5px; /* Расстояние между картинкой и текстом */
+    font-size: 24px; 
+    margin-top: 5px; 
     font-family: 'Comic Sans MS';
 }
 
@@ -173,10 +172,10 @@ table {
 }
 
 .footer {
-    background-color: #333; /* Цвет фона футера */
-    color: #fff; /* Цвет текста */
-    padding: 20px; /* Внутренний отступ футера */
-    width: 98%; /* Ширина футера равна ширине страницы */
+    background-color: #333; 
+    color: #fff; 
+    padding: 20px; 
+    width: 98%; 
 }
 
 .pink-link {
