@@ -22,6 +22,9 @@
 
 .block1 {
   grid-column: 1 / 2;
+}
+
+.select{
   background-color: rgba(120, 150, 70, 1.0);
 }
 
