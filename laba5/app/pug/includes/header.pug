@@ -1,0 +1,32 @@
+doctype html
+html(lang='ru')
+  head
+    meta(charset='UTF-8')
+    title #{title}
+    link(rel='stylesheet', type='text/css', href='css/main.css')
+  body
+    .fon
+      .top-panel
+        .search-box
+          input(type='text', placeholder='Поиск...')
+          button 🔍
+      .menu
+        .block.block1
+          a(href='index.html')
+            span.red(class= index) РОМНЕФТЬ
+        .block.block2
+          a(href='table.html')
+            span.blue(class= table) ОТЧЕТ КОМПАНИИ
+        .block.block3
+          a(href='worker.html')
+            span.white(class= worker) О РАБОТНИКАХ
+      if index === 'select'
+        .flex-container
+          .big
+            span.white Ром
+            span.blue не
+            span.red фть
+          span.white -
+          span.blue мечты
+          span.red &nbspсбываются!
+    
