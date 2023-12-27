@@ -1,0 +1,56 @@
+mixin addImage(image, color, title, text)
+  .item 
+    if image=='img/3.png'
+      a(href='worker.html')
+        img(src=image)
+    else
+      img(src=image)
+    h2(class=color)= title
+    br
+    p= text
+    if image=='img/4.png'
+      ul
+        li Цены на энергоносители
+        li Объем добычи
+        li Операционные расходы
+        li Техническая эффективность
+
+block variables
+
+block header
+  doctype html
+  html(lang='ru')
+    head
+      meta(charset='UTF-8')
+      title #{title}
+      link(rel='stylesheet', type='text/css', href='css/main.css')
+    body
+      .fon
+        .top-panel
+          .search-box
+            input(type='text', placeholder='Поиск...')
+            button 🔍
+        .menu
+          .block
+            a(href='index.html')
+              span.red(class= index) РОМНЕФТЬ
+          .block
+            a(href='table.html')
+              span.blue(class= table) ОТЧЕТ КОМПАНИИ
+          .block.down
+            a(href='worker.html')
+              span.white(class= worker) О РАБОТНИКАХ
+        .flex-container
+          .big
+            span.white Ром
+            span.blue не
+            span.red фть
+          span.white -
+          span.blue мечты
+          span.red &nbspсбываются!
+
+block content
+block footer
+  .footer
+    .left-text &copy Шевелев Р.В., Б9121-09.03.04(5), 2023-2024
+    .right-text ✉Контакты
