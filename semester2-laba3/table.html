@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Отчетность</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+	<div class="fon">
+		<div class="top-panel">
+			<div class="search-box">
+				<input type="text" placeholder="Поиск...">
+				<button>🔍</button>
+			</div>
+		</div>
+		<div class="menu">
+			<div class="block"><a href="index.html"><span class="red">РОМНЕФТЬ</span></a></div>
+			<div class="block"><a href="table.html"><span class="blue select">ОТЧЕТ КОМПАНИИ</span></a></div>
+			<div class="block down"><a href="worker.html"><span class="white">О РАБОТНИКАХ</span></a></div>
+		</div>
+		<div class="flex-container">
+			<div class="big"><span class="white">Ром</span><span class="blue">не</span><span class="red">фть</span></div><span class="white">-</span><span class="blue">мечты</span><span class="red">&nbspсбываются!</span>
+		</div>
+	</div>
+	<div class="details-block">
+		<details>
+			<p>
+				<summary>Построение графика</summary>
+			</p>
+			<form>
+				<p>Значение по оси OX:<br>
+					<label>
+						<input type="radio" name="graph" value="year">Год
+					</label><br>
+					<label>
+						<input type="radio" name="graph" value="city">Город
+					</label>
+				</p>
+				<p>Результат:<br>
+					<label>
+						<input type="checkbox" name="graph" value="dividends">Средние дивиденды (%)
+					</label><br>
+					<label>
+						<input type="checkbox" name="graph" value="people">Уровень занятости (привлеченных человек)
+					</label><br>
+					<label>
+						<input type="checkbox" name="graph" value="actprice">Средняя стоимость акции (руб)
+					</label><br>
+					<label>
+						<input type="checkbox" name="graph" value="value">Объём добычи (тысяч тонн)
+					</label>
+				</p>
+				<p>
+					<input type="button" value="Построить">
+					<input type="reset" value="Сбросить настройки">
+				</p>
+			</form>
+		</details>
+		<details>
+			<summary>Фильтр</summary>
+			<form id="filterForm">
+				<p>
+					<label>Год: от</label>
+					<input type="number" id="yearFrom"> до
+					<input type="number" id="yearTo"><br><br>
+					<label>Город:</label>
+					<input type="text" id="city"><br><br>
+					<label>Доходность (млн руб): от</label>
+					<input type="number" id="incomeFrom"> до
+					<input type="number" id="incomeTo"><br><br>
+					<label>Объем добычи (тысяч тонн): от</label>
+					<input type="number" id="productionFrom"> до
+					<input type="number" id="productionTo"><br><br>
+					<label>Затраты на исследования (млн руб): от</label>
+					<input type="number" id="researchFrom"> до
+					<input type="number"id="researchTo"><br><br>
+					<label>Затраты на экобез (млн руб): от</label>
+					<input type="number" id="ecologyFrom"> до
+					<input type="number" id="ecologyTo"><br><br>
+					<label>Уровень занятости (человек): от</label>
+					<input type="number" id="employmentFrom"> до
+					<input type="number" id="employmentTo"><br><br>
+					<label>Инвестиции и финансирование (млн руб): от</label>
+					<input type="number" id="investmentFrom"> до
+					<input type="number" id="investmentTo"><br><br>
+					<label>Стоимость 1 акции (руб): от</label>
+					<input type="number" id="priceFrom"> до
+					<input type="number" id="priceTo"><br><br>
+					<label>Дивиденды на акцию (%): от</label>
+					<input type="number" id="dividendFrom"> до
+					<input type="number" id="dividendTo"><br><br>
+					<label>Общая сумма выплат акционерам (млн руб): от</label>
+					<input type="number" id="payoutFrom"> до
+					<input type="number" id="payoutTo"><br><br>
+				</p>
+				<p>
+					<input id="findBtn" type="button" value="Найти">
+					<input id="resetBtn" type="reset" value="Сбросить фильтр">
+				</p>
+			</form>
+		</details>
+		<details>
+			<summary>Сортировка</summary>
+			<form id="sort">
+				<p>
+					<select id="first">
+					</select>
+					По убыванию? <input type="checkbox" id="firstdesc">
+				</p>
+				<p>
+					<select id="second">
+					</select>
+					По убыванию? <input type="checkbox" id="seconddesc">
+				</p>
+				<p>
+					<select id="third">
+					</select>
+					По убыванию? <input type="checkbox" id="thirddesk">
+				</p>
+				<p>
+					<input id="sortbutton"type="button" value="Сортировать">
+					<input id="resetsort" type="reset" value="Сбросить настройки">
+				</p>
+			</form>
+		</details>
+	</div>
+	<h1>Данные Нефтегазовой Компании</h1>
+	<table id="list">
+	</table>
+	<div class="footer">
+		<div class="left-text">&copy Шевелев Р.В., Б9121-09.03.04(5), 2023-2024</div>
+		<div class="right-text">✉Контакты</div>
+	</div>
+	<script src="js/data.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
