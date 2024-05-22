@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<script src="https://d3js.org/d3.v7.min.js"></script>
+	<style>
+		body { font-size: 2em; }
+		svg { border: 1px solid black; }
+		button { font-size: 1em; width: auto; height: auto; }
+		input { font-size: 1.2em; }
+		#rotateCheckbox { transform: scale(2); }
+	</style>
+</head>
+<body>
+	<svg></svg>
+	<form>
+		<label for="duration">Скорость анимации (секунд):</label>
+		<input type="number" id="duration" value="5">
+		<button type="button" id="start">Старт</button>
+		<button type="button" id="clear">Сброс</button><br>
+		<p>Эффект: Масштабирование</p>
+		<label>Масштаб уменьшения (%):</label>
+		<input type="number" id="decScale" value="30" min="0" max="80">
+    	<label for="rotateCheckbox">Добавить вращение</label>
+		<input type="checkbox" id="rotateCheckbox"> 
+	</form>
+	<script src="script.js"></script>
+</body>
+</html>
