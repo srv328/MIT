@@ -1,0 +1,306 @@
+body {
+	font-family: 'Cascadia Code', sans-serif;
+	font-size: 1.1em;
+	margin: 0;
+	padding: 0;
+	background: linear-gradient(to bottom, gray, dimgray);
+}
+
+.container {
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+img {
+	width: 25px;
+	height: 25px;
+}
+
+header {
+	display: flex;
+	background-color: #333;
+	color: #fff;
+	padding: 10px 0;
+	text-align: center;
+}
+
+header h1 {
+	margin: 0;
+}
+
+.about-me {
+	display: block;
+	min-height: 80px;
+}
+
+.about-me h2 {
+	margin: 0;
+	margin-top: 10px;
+}
+
+a {
+	color: #333;
+	text-decoration: none;
+	transition: all 0.3s ease;
+}
+
+a:hover {
+	color: #FF8C00;
+	transform: scale(1.14);
+}
+
+.profile-image {
+	text-align: center;
+	margin-bottom: 25px;
+}
+
+.profile-image img {
+	width: 220px;
+	height: 220px;
+	border: thin solid gray;
+	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.55);
+}
+
+p {
+	text-indent: 40px;
+	margin-top: 10px;
+	margin-bottom: 0px;
+}
+
+li {
+	margin-bottom: 8px;
+}
+
+
+.social-links {
+	text-align: center;
+}
+
+.social-links a {
+	display: inline-block;
+	text-align: center;
+	margin: 0 20px;
+	font-size: 24px;
+	color: #333;
+	transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+	color: #FF8C00;
+	transform: scale(1.14);
+}
+
+.projects {
+	margin-bottom: 20px;
+}
+
+.projects h2 {
+	margin-top: 30px;
+	text-align: center;
+}
+
+.footer {
+	display: flex;
+	min-height: 50px;
+	align-items: center;
+	background-color: #333;
+	color: #fff;
+}
+
+.left-text {
+	margin-right: auto;
+	margin-left: 15px;
+}
+
+.right-text a {
+	color:#fff;
+	margin-left: auto;
+	margin-right: 15px;
+}
+
+.project-images {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.project-images img {
+	min-width: 25vmax;
+	height: auto;
+	margin: 5px;
+}
+
+.projects ul {
+	padding: 0;
+}
+
+.project-item h3 {
+	padding: 10px;
+	transition: all 0.3s ease;
+}
+
+.project-item h3 a:hover {
+	flex-shrink: 0;
+	padding: 10px;
+}
+
+.additional-info {
+	margin-left: 50px;
+}
+
+.contact-button {
+	font-family: 'Cascadia Code', sans-serif;
+	display: block;
+	margin: 10px auto;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 25px;
+	font-size: 20px;
+	color: #fff;
+	background-color: #333;
+	transition: background-color 0.5s ease;
+	cursor: pointer;
+}
+
+.contact-button:hover {
+	background-color: #FF8C00;
+}
+
+.contact-form {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+.contact-form div {
+	display: flex;
+	flex-direction: column; 
+	gap: 5px;
+}
+
+.contact-form label {
+	font-weight: bold;
+	color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+	padding: 10px;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	background-color: #f5f5f5;
+	color: #333;
+	transition: border-color 0.5s ease;
+}
+
+.contact-form textarea {
+	max-height: 150px;
+	min-height: 150px;
+	max-width: 400px;
+	min-width: 400px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+	outline: none;
+	border-color: #4682B4;
+}
+
+.contact-form button { 
+	padding: 12px 20px;
+	border: none;
+	border-radius: 25px;
+	font-size: 16px;
+	color: #fff;
+	background-color: #444;
+	cursor: pointer;
+	transition: background-color 0.5s ease;
+}
+
+.contact-form button:hover {
+	background-color: #FF8C00;
+}
+
+.error {
+	border-color: red !important;
+}
+
+.contact-form label {
+	color: #fff; 
+}
+
+@media (max-width: 768px) {
+
+	a {
+		color: #333;
+		text-decoration: none;
+	}
+
+	a:hover {
+		color: #333; 
+		transform: scale(1);
+	}
+
+	a:active {
+		color: #333;
+		transform: scale(1);
+	}
+
+	.social-links a {
+		color: #333;
+	}
+
+	.social-links a:hover {
+		color: #333;
+		transform: scale(1);
+	}
+
+	.social-links a:active {
+		color: #333;
+	}
+
+	.contact-form textarea {
+		max-height: 100px;
+		min-height: 100px;
+		max-width: 200px;
+		min-width: 200px;
+	}
+
+	.pagination-tabs {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.pagination-tab {
+		width: 100%;
+		margin-bottom: 10px;
+	}
+
+	.project-images {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.project-images img {
+		width: 100%;
+		margin-bottom: 10px;
+	}
+
+	.contact-button:active {
+		background-color: #333;
+	}
+
+	.contact-button:hover {
+		background-color: #333;
+	}
+
+	.contact-form button:hover {
+		background-color: #444;
+	}
+
+	.right-text a:hover {
+		color:#fff;
+	}
+}

@@ -1,0 +1,38 @@
+.modal {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.4); 
+	display: flex; 
+	justify-content: center;
+	align-items: center;
+	opacity: 0;
+	transition: opacity 0.5s ease;
+}
+
+.modal-content {
+	color: #fff;
+	background-color: #333;
+	padding: 20px;
+	border-radius: 5px;
+	max-width: 500px; 
+}
+
+.close-button {
+	cursor: pointer;
+	position: relative;
+	top: 5px;
+	left: 95%;
+	font-size: 30px; 
+}
+
+.modal.open {
+	opacity: 1;
+}
+
+.modal.close {
+	opacity: 0;
+}

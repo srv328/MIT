@@ -1,0 +1,36 @@
+.expandable-section {
+	width: 90%;
+	margin: 20px auto;
+	border: 2px solid #ccc;
+	border-radius: 10px; 
+	padding: 15px; 
+	position: relative; 
+}
+
+.expandable-section h2 {
+	margin: 0; 
+	display: flex; 
+	align-items: center; 
+	justify-content: space-between; 
+	cursor: pointer; 
+}
+
+.expandable-section h2 .toggle-icon {
+	font-size: 1.5em;
+	transition: transform 0.3s ease; 
+}
+
+.expandable-section.expanded .toggle-icon {
+	transform: rotate(22deg); 
+}
+
+.expandable-section .content {
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.5s ease;
+}
+
+.expandable-section.expanded .content {
+	max-height: 800px;
+	transition: max-height 0.5s ease; 
+}
